@@ -12,3 +12,8 @@ mysql> CREATE TABLE departments (
 mysql> ALTER TABLE departments MODIFY name VARCHAR(20) NOT NULL;
 
 
+Q2
+
+mysql> DESC people;
+
+mysql>ALTER TABLE people ADD department_id INT unsigned AFTER email;
