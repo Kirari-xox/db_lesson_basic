@@ -18,6 +18,7 @@ mysql> DESC people;
 
 mysql>ALTER TABLE people ADD department_id INT unsigned AFTER email;
 
+
 Q3
 mysql> INSERT INTO departments (name)
     -> VALUES
@@ -52,5 +53,9 @@ mysql> INSERT INTO reports (person_id, content)
     -> (14, '9/27はsection13まで終わっています。'),
     -> (15, '9/28は早退いたします。'),
     -> (16, '10/1は○○のデータを削除しました。');
+
+
+Q4
+mysql>SELECT * FROM people WHERE department_id != 'NULL';
 
 
