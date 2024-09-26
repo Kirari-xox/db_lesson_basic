@@ -71,5 +71,23 @@ mysql> UPDATE people SET age = '21' WHERE person_id = 7;
 mysql> SELECT name, age, gender FROM people WHERE gender = 1 ORDER BY age DESC;
 
 
+Q6
+SELECT
+  `name`, `email`, `age`
+FROM
+  `people`
+WHERE
+  `department_id` = 1
+ORDER BY
+  `created_at`;
+
+`people`のテーブルの中から`name`, `email`, `age`のカラムで絞って、
+レコードの表示を指定する。
+また、`department_id` = 1で部署が営業の人物であり、
+ORDER BYで`created_at`で作成時間の昇順に並ぶように条件をつけている。
+
+
+
+
 
 
