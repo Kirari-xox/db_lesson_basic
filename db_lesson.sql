@@ -95,5 +95,9 @@ Q8
 mysql> SELECT * FROM people WHERE `department_id` = 1 ORDER BY age ASC;
 
 
+Q9
+mysql> SELECT AVG(age) AS average_age FROM people GROUP BY department_id = 2 AND gender = 2;
+
+
 
 
