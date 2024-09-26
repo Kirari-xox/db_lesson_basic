@@ -65,7 +65,10 @@ Q5
   person_idが9,12,15,16をgender = '2'で更新
 mysql> UPDATE people SET gender = '1' WHERE person_id = 7;
 
+- それぞれのperson_idへ適当に年齢入れる
 mysql> UPDATE people SET age = '21' WHERE person_id = 7;
+
+mysql> SELECT name, age, gender FROM people WHERE gender = 1 ORDER BY age DESC;
 
 
 
