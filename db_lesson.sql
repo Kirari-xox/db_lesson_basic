@@ -87,6 +87,10 @@ ORDER BY
 ORDER BYで`created_at`で作成時間の昇順に並ぶように条件をつけている。
 
 
+Q7
+mysql> SELECT name FROM people WHERE age >=20 AND age < 30 AND gender = 2 OR age >= 40 AND age < 50 AND gender = 1;
+
+
 
 
 
