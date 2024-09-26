@@ -91,6 +91,8 @@ Q7
 mysql> SELECT name FROM people WHERE age >=20 AND age < 30 AND gender = 2 OR age >= 40 AND age < 50 AND gender = 1;
 
 
+Q8
+mysql> SELECT * FROM people WHERE `department_id` = 1 ORDER BY age ASC;
 
 
 
