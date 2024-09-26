@@ -59,3 +59,14 @@ Q4
 mysql>SELECT * FROM people WHERE department_id != 'NULL';
 
 
+Q5
+- 性別分け、年齢順にするためレコードの更新
+  person_idが7,8,10,11,13,14をgender = '1'
+  person_idが9,12,15,16をgender = '2'で更新
+mysql> UPDATE people SET gender = '1' WHERE person_id = 7;
+
+mysql> UPDATE people SET age = '21' WHERE person_id = 7;
+
+
+
+
