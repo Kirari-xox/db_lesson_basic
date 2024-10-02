@@ -108,8 +108,7 @@ mysql> SELECT AVG(age) AS average_age FROM people GROUP BY department_id = 2 AND
 Q10
 mysql> SELECT p.name, d.name, r.content
   -> FROM people p JOIN departments d ON p.department_id = d.department_id
-  -> JOIN reports r ON p.person_id = r.person_id
-  -> WHERE r.content != 'NELL';
+  -> JOIN reports r ON p.person_id = r.person_id;
 
 
 Q11
