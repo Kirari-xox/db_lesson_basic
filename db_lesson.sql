@@ -106,4 +106,8 @@ mysql> SELECT p.name, d.name, r.content
   -> WHERE r.content != 'NELL';
 
 
+Q11
+- レコードが間違っていたため、修正。
+mysql> DELETE FROM reports WHERE report_id = 2;
 
+mysql> SELECT p.name FROM people p LEFT OUTER JOIN reports r USING (person_id) WHERE content IS NULL;
