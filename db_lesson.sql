@@ -1,7 +1,5 @@
 Q1
 
-mysql>USE db_lesson;
-
 mysql> CREATE TABLE departments (
     -> department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     -> name VARCHAR(20),
@@ -56,7 +54,15 @@ mysql> INSERT INTO reports (person_id, content)
 
 
 Q4
-mysql>SELECT * FROM people WHERE department_id != 'NULL';
+mysql> UPDATE people SET department_id = 1 WHERE person_id = 1;
+
+mysql> UPDATE people SET department_id = 2 WHERE person_id = 2;
+
+mysql> UPDATE people SET department_id = 3 WHERE person_id = 3;
+
+mysql> UPDATE people SET department_id = 4 WHERE person_id = 4;
+
+mysql> UPDATE people SET department_id = 5 WHERE person_id = 6;
 
 
 Q5
